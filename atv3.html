@@ -1,0 +1,39 @@
+<!--O consultório de dermatologia da Dra. Maria Eduarda Leite tem​ a necessidade de controlar, a partir de um sistema, 
+a sua lista de agendamentos de pacientes de modo que, além da data, seja armazenado o nome do paciente 
+e o convênio que pode ser UNIMED, AMIL, BRADESCO ou PARTICULAR e o telefone de contato do paciente.​-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let n = 0;
+
+
+document.write("Sistema de Cadastro");
+
+
+
+let resp = prompt("Deseja agendar uma consulta? ");
+
+while (resp=="Sim" || resp=="sim"){
+    let nome = prompt("Digite Nome do Cliente: ");
+    let data = prompt("Digite data para consulta: ");
+    let convenio = prompt("Digite convênio do Cliente: ");
+    let telefone = prompt("Digite telfone para contato:")
+n++;
+    
+resp=prompt("Deseja marcar uma nova consulta?");
+document.write("<br><br> Destalhes das consultas: "+nome+" "+data+" "+convenio+" "+telefone);
+}
+
+document.write("<br><br> Total de consultas agendadas é "+n );
+
+document.write("<br><br>Cadastro Finalizado!");
+
+    </script>
+</body>
+</html>

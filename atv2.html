@@ -1,0 +1,29 @@
+<!--Faça um programa que leia o nome e a altura de N pessoas. Verifique se a pessoa tem mais de 1.70 e mostre a mensagem “Altura dentro do solicitado”.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let i = prompt("Deseja verificar uma pessoa?")
+        
+        while (i== "Sim" || i== "sim"){
+        let nome = prompt("Digite seu nome");
+        let altura = Number(prompt("Digite sua altura"));
+        
+        
+        if(altura>1.70){
+            alert(nome+" sua altura  está dentro do solicitado.")
+        } else {
+            alert(nome+" sua altura  está abaixo do solicitado.")
+        } i= prompt("Deseja verificar uma nova pessoa?")
+    }
+
+    </script>
+</body>
+</html>
