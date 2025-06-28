@@ -1,0 +1,41 @@
+<!--O consultório de dermatologia da Dra. Maria Eduarda Leite tem a necessidade de controlar, a partir de um sistema, a sua lista de agendamentos de pacientes de modo que, 
+    além da data, seja armazenado o nome do paciente e o convênio que pode ser UNIMED, AMIL, BRADESCO ou PARTICULAR e o seu contato. ​-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+let nome=[];
+let data=[];
+let hora=[];
+let convenio=[];
+
+
+let agendamentos=Number(prompt("Quantas pessoas deseja cadastrar?"))
+
+for(let i=0;i<=agendamentos;i++){
+    nome[i]=prompt("Digite seu nome:");
+    data[i]=prompt("Digite a data:");
+    hora[i]=prompt("Digite o horário da consulta:")
+    convenio[i]=prompt("Digite o convenio:")
+}
+
+document.write("Consultório Dra. Maria Eduarda Leite")
+document.write("<br> Consultas agendadas")
+
+for(i=0;i<=agendamentos;i++){
+    document.write("<br> "+nome[i]+" - "+data[i]+" - "+hora+" - "+convenio);
+}
+
+
+
+
+        </script>
+    </body>
+    </html>
